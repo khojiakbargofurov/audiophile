@@ -7,3 +7,9 @@
     @apply max-w-6xl mx-auto px-4; 
   }
 }
+.bg-zx7{
+  background-image: url("../../public/assets/home/desktop/image-speaker-zx7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

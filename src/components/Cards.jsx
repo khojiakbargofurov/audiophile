@@ -30,9 +30,9 @@ function Cards() {
         </div>
       </div>
       <div className="grid  lg:grid-cols-2 grid-cols-1 items-center justify-between p-4 rounded-lg relative">
-        <div className="max-w-[349px] " >
+        <div className="max-w-[349px] absolute pl-16" >
           <h2 className='text-4xl pb-8'>ZX7 SPEAKER</h2>
-          <button className="btn text-black  hover:text-white hover:bg-black w-40 h-12 bg-nane border-2 border-black">
+          <button className=" btn text-black  hover:text-white hover:bg-black w-40 h-12 bg-nane border-2 border-black">
             <Link to="/earphones">See Products</Link>
           </button>
         </div>
@@ -40,7 +40,7 @@ function Cards() {
           <picture>
             <source media="(max-width:950px)" srcSet={Zx7Tablet} />
             <source media="(max-width:465px)" srcSet={Zx7Mobile} />
-            <img className='rounded-lg' src={Zx7} alt="ZX7 Speaker" style={{ width: 'auto' }} />
+            <img className='rounded-lg lg:max-w-6xl' src={Zx7} alt="ZX7 Speaker" style={{ width: 'auto' }} />
           </picture>
         </div>
       </div>
