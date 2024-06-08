@@ -35,7 +35,7 @@ function Earphones() {
                         height={560}
                       />
                     )}
-                    <div className="lg:text-left  gap-5">
+                    <div className="lg:text-left flex flex-col  gap-5">
                       <p className="letter_space_2">NEW PRODUCT</p>
                       <h2 className="text-4xl">{product.slug}</h2>
                       <p className="">{product.description}</p>
