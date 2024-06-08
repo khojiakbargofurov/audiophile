@@ -40,11 +40,11 @@ function SingleProduct() {
 
   return (
     <>
-      <div className="py-20">
+      <div className="py-20 align-element">
         <Link to="/">
-          <p className="flex items-center pl-52 pb-4 text-[#7D7D7D]">Go Back</p>
+          <p className="flex items-center  pb-4 text-[#7D7D7D]">Go Back</p>
         </Link>
-        <div className="flex text-left items-center gap-24 justify-center flex-wrap w-full">
+        <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-24 justify-center ">
           <img
             src={`.${product.categoryImage.desktop}`}
             alt={product.name}
@@ -70,8 +70,8 @@ function SingleProduct() {
                     +
                   </button>
                 </div>
-                <button onClick={addToBag} className="btn1">
-                  add to bag
+                <button onClick={addToBag} className="btn p-6 pb-4 items-center">
+                  Add to bag
                 </button>
               </div>
             </div>
