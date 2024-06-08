@@ -8,3 +8,4 @@ export {default as Register} from "./Register";
 export {default as Singleproduct} from "./SingleProduct";
 export {default as Speakers} from "./Speakers";
 export {default as Error} from "./Error"
+export {default as Trash} from "./Trash"
