@@ -5,7 +5,7 @@ import BestGearMobile from "../../public/assets/shared/mobile/image-best-gear.jp
 
 function BestGearComponent() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center align-element row-reverse ">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center align-element row-reverse mt-40 mb-40">
       <div className="space-y-6 lg:text-left text-center">
         <h3 className="uppercase font-bold text-5xl ">
           Bringing you the <span className="text-[#D87D4A]">best</span> audio gear

@@ -6,6 +6,7 @@ import { addProduct } from "../counterSlice";
 import headphones from "../../public/assets/shared/desktop/category.png";
 import audiophile from "../../public/assets/shared/desktop/image.png";
 import earphones from "../../public/assets/shared/desktop/image-category-thumbnail-earphones.png";
+import Features from "../components/Features";
 
 export const loader = async ({ params }) => {
   const req = await customFetch(`/products/?slug=${params.slug}`);
@@ -40,7 +41,9 @@ function SingleProduct() {
   return (
     <>
       <div className="py-20">
-        <p className="flex items-center pl-52 pb-4 text-[#7D7D7D]">Go Back</p>
+        <Link to="/">
+          <p className="flex items-center pl-52 pb-4 text-[#7D7D7D]">Go Back</p>
+        </Link>
         <div className="flex text-left items-center gap-24 justify-center flex-wrap w-full">
           <img
             src={`.${product.categoryImage.desktop}`}
@@ -164,7 +167,7 @@ function SingleProduct() {
           </div>
         </div>
       </div>
-      <footer></footer>
+      <Features/>
     </>
   );
 }
