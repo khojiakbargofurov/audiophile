@@ -31,7 +31,7 @@ function Headphones() {
             if (product.category === "headphones") {
               return (
                 <div key={product.id}>
-                  <li className="flex text-left items-center gap-24 justify-center flex-wrap w-full">
+                  <li className="grid lg:grid-cols-2 grid-cols-1 text-left items-center gap-24 justify-center">
                     {product.id == 3 ? (
                       ""
                     ) : (
@@ -42,7 +42,7 @@ function Headphones() {
                         height={560}
                       />
                     )}
-                    <div className="lg:text-left flex flex-col gap-5 text-start">
+                    <div className="lg:text-left flex flex-col gap-5 text-center">
                       <p className="letter_space_2">NEW PRODUCT</p>
                       <h2 className="text-4xl">{product.slug}</h2>
                       <p className="w-96">{product.description}</p>

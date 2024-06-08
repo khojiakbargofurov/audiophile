@@ -17,16 +17,16 @@ function Speakers() {
 
   return (
     <>
-      <div>
+      <div className=''>
         <div className="p-20 font-bold uppercase background-links bg-black">
           <h2 className="text-center text-white text-3xl">Speakers</h2>
         </div>
-        <ul className="container flex flex-col mt-10 mb-10 gap-10 text-left items-center">
+        <ul className="container flex flex-col mt-10 mb-10 gap-10 text-left items-center align-element">
           {products.map((product) => {
             if (product.category === "speakers") {
               return (
                 <div key={product.id}>
-                  <li className="flex text-left items-center gap-24 justify-center flex-wrap w-full">
+                  <li className="grid lg:grid-cols-2 grid-cols-1 text-left items-center  gap-20">
                     {product.id !== 6 && (
                       <img
                         src={product.categoryImage.desktop}
