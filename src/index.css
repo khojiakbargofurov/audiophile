@@ -2,14 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .align-element{
-    @apply max-w-6xl mx-auto px-4; 
+@layer components {
+  .align-element {
+    @apply max-w-6xl mx-auto px-4;
   }
 }
-.bg-zx7{
+.bg-zx7 {
   background-image: url("../../public/assets/home/desktop/image-speaker-zx7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.modal-overlay {
+  backdrop-filter: blur(3px);
+  position: flex;
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  padding: 0 200px 0 0;
+  z-index: 100;
+}
+.modal-one {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
 }

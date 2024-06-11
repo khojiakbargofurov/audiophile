@@ -40,13 +40,13 @@ function Navbar() {
           <div className="navbar-end">
             {shop ? (
               <div className="modal-wrapper">
-                <div className="overlay">
+                <div className="modal-overlay">
                   {amount === 0 ? (
-                    <div className="modal shadow-2xl text-2xl text-center text-slate-400">
+                    <div className="modal-one">
                       NO product
                     </div>
                   ) : (
-                    <div className="modal shadow-2xl">
+                    <div className="modal-one shadow-2xl">
                       <div className="flex justify-between">
                         <h4>cart ({products.length})</h4>
                         <button onClick={() => dispatch(removeAll([]))}>
