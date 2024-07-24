@@ -10,10 +10,7 @@ Welcome to the Audiophile Web Store project! This is an e-commerce website dedic
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
-- [Screenshots](#screenshots)
 
 ## Project Description
 
